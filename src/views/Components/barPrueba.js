@@ -91,6 +91,7 @@ class Prueba extends React.Component {
           }
         }
       });
+      return mixedChart;
     };
   
     render() {
