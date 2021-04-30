@@ -17,42 +17,61 @@ class Prueba extends React.Component {
         data: {
           datasets: [
             {
-              label: "Bar Dataset",
-              data: [7, 3, 0, 10, 0, 0, 0, 10, 0, 15, 0, 0],
-              type: "bar",
-              backgroundColor: "#DE924B"
-            },
-            {
-              label: "Bar Dataset 2",
-              data: [20, 18, 20, 35, 10, 15, 10, 20, 15, 25, 10, 20],
-              type: "bar",
-              backgroundColor: "#71A4F1"
-            },
-            
-            {
-              label: "Line Dataset 2",
-              data: [7, 3, 0, 10, 0, 0, 0, 10, 0, 15, 0, 0],
+              label: "Llamadas Ofrecidas",
+              data: [0,1,4,1,2,1,0,2,3,1,2,1,0,0,2,1,1,0,7,1,0,2,7,2,3,6,0,0],
               pointHoverRadius: [2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
               type: "line",
-              backgroundColor: "#D46261",
+              backgroundColor: "rgba(192,3,39,0.7)",
               fill: false,
               borderColor: 'rgba(255, 99, 132, 0.2)',
             },
+            {
+              label: "Llamadas Abandonadas",
+              data: [0,1,0.75,0.100,0,0,0,0.50,0.33,0,0.50,0,0,0,0.100,0,0,0,0.57,0,0,0,0.71,0,0,0],
+              type: "bar",
+              backgroundColor: "rgba(192,3,39,0.7)",
+            },
+            {
+              label: "Llamadas Atendidas",
+              data: [0,1,4,1,2,1,0,2,3,1,2,1,0,0,2,1,1,0,7,1,0,2,7,2,3,6,0,0],
+              type: "bar",
+              backgroundColor: "#DE924B"
+            },
+            
+            
+            
            
           ],
           labels: [
-            "Jan",
-            "Feb",
-            "Mar",
-            "Apr",
-            "May",
-            "Jun",
-            "Jul",
-            "Aug",
-            "Sep",
-            "Oct",
-            "Nov",
-            "Dec"
+            "Lun 01",
+            "Mar 02",
+            "Mie 03",
+            "Jue 04",
+            "Vie 05",
+            "Sab 06",
+            "Dom 07",
+            "Lun 08",
+            "Mar 09",
+            "Mie 10",
+            "Jue 11",
+            "Vie 12",
+            "Sab 13",
+            "Dom 14",
+            "Lun 15",
+            "Mar 16",
+            "Mie 17",
+            "Jue 18",
+            "Vie 19",
+            "Sab 20",
+            "Dom 21",
+            "Lun 22",
+            "Mar 23",
+            "Mie 24",
+            "Jue 25",
+            "Vie 26",
+            "Sab 27",
+            "Dom 28",
+            
           ]
         },
         options: {
@@ -97,8 +116,11 @@ class Prueba extends React.Component {
     render() {
       return (
         <div>
+            <div>
+                
+            </div>
           <canvas
-           style={{width:"900px"}}
+           style={{width:"1000px"}}
             ref={chart => {
               this.chart = chart;
             }}
