@@ -70,9 +70,7 @@ class Index extends Component {
                   </div>
                 </div>
 
-                <div className="section ">
-                <Prueba/>
-                </div>
+
 
                 <div className="section "
                   style={{
@@ -88,11 +86,25 @@ class Index extends Component {
 
                 <div className="section ">
                   <ul >
-                    <li style={{fontSize:"28px"}}>Marcación de bases de renovación.</li>
-                    <li style={{fontSize:"28px"}}>Envío de WhatsApp con promociones.</li>
-                    <li style={{fontSize:"28px"}}>Actualización de estados en WhatsApp</li>
-                    <li style={{fontSize:"28px"}}>Seguimiento cotizaciones previas.</li>
+                    <li style={{ fontSize: "28px" }}>Marcación de bases de renovación.</li>
+                    <li style={{ fontSize: "28px" }}>Envío de WhatsApp con promociones.</li>
+                    <li style={{ fontSize: "28px" }}>Actualización de estados en WhatsApp</li>
+                    <li style={{ fontSize: "28px" }}>Seguimiento cotizaciones previas.</li>
                   </ul>
+                </div>
+
+                <div className="section ">
+                  <Container>
+                    <Row>
+                      <Col xs="12">
+                        <h2 className="border border-bottom border-danger"><span>Resumen general IN</span></h2>
+                      </Col>
+                      <Col xs="12">
+                        <Prueba />
+                      </Col>
+                    </Row>
+                  </Container>
+
                 </div>
 
                 <div className="section">
